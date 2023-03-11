@@ -1,0 +1,105 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F6F6EC;
+}
+
+.wrapper {
+    margin: 0 5%;
+}
+
+
+h2 {
+    padding-left: 1rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin: 1.25rem 0;
+}
+
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+
+.accordion {
+    max-width: 80vw;
+    overflow: hidden;
+}
+
+.item {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    border-bottom: 1px dotted #dce7eb;
+    cursor: pointer;
+}
+
+.item-lable {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: teal;
+    font-size: 1.62rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.item-lable:hover {
+    background-color: cadetblue;
+}
+
+.item-lable::after {
+    content: '+';
+    width: 1.56rem;
+    height: 1.56rem;
+    text-align: center;
+    visibility: hidden;
+}
+
+.accordion:hover .item-lable::after {
+    visibility: visible;
+}
+
+
+
+.item-content {
+    max-height: 0;
+    padding: 0 1rem;
+
+}
+
+.item-pic {
+    width: 100%;
+    height: auto;
+}
+
+
+input:checked+.item-lable {
+    background-color: brown;
+
+}
+
+input:checked+.item-lable::after {
+    transform: rotate(45deg);
+}
+
+
+input:checked+.item-lable~.item-content {
+    max-height: 100vh;
+    padding: 1rem;
+}
