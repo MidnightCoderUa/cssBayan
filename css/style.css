@@ -71,6 +71,7 @@ input {
     width: 1.56rem;
     height: 1.56rem;
     text-align: center;
+    transition: all 0.35s ease-in-out;
     visibility: hidden;
 }
 
@@ -83,6 +84,9 @@ input {
 .item-content {
     max-height: 0;
     padding: 0 1rem;
+    color: greenyellow;
+    background: #F6F6EC;
+    transition: all 0.35s ease-in-out;
 
 }
 
