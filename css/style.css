@@ -124,3 +124,16 @@ input:checked+.item-lable~.item-content {
     }
 
 }
+
+@media (max-width:430px) {
+
+    .item-lable {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .item-lable::after {
+        font-size: 1.25px;
+        font-weight: 500;
+    }
+}
