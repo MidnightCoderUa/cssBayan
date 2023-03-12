@@ -110,3 +110,17 @@ input:checked+.item-lable~.item-content {
     max-height: 100vh;
     padding: 1rem;
 }
+
+@media (max-width:500px) {
+
+    .item-lable {
+        font-size: 1.37rem;
+        font-weight: 500px;
+    }
+
+    .item-lable::after {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+}
