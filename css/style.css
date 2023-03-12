@@ -40,7 +40,7 @@ input {
 
 
 .accordion {
-    max-width: 80vw;
+    max-width: 1000px;
     overflow: hidden;
 }
 
@@ -133,7 +133,7 @@ input:checked+.item-lable~.item-content {
     }
 
     .item-lable::after {
-        font-size: 1.25px;
+        font-size: 1.25rem;
         font-weight: 500;
     }
 }
